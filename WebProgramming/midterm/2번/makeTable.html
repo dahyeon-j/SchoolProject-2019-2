@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 만들기</title>
+    <script src="makeTable.js"></script>
+    <link rel="stylesheet" href="makeTable.css">
+</head>
+<body>
+    <div>
+        <h1>테이블 만들기</h1>
+        <input type="text" id="makerow">행, <input type="text" id="makecol"> 열
+        <button onclick="maketable()">테이블만들기</button>
+    </div>
+    <div>
+        <h1>새로운 행 또는 열 추가하기</h1>
+        <form>
+        <input type="radio" name="append" id="appendrow"> 열 <input type="radio" name="append" id="appendcol"> 행 <br/>
+        </form>
+        추가 할 위치: <input type="text" id="appendPosition"><br/>
+        <button onclick="appendTable()">추가</button>
+    </div>
+    <div>
+        <h1>내용 추가하기</h1>
+        <input type="text" id="contentRow">행, <input type="text" id="contentCol"> 열<br/>
+        추가 할 내용: <input type="text" id="content"><br/>
+        <button onclick="addContent()">추가</button>
+
+    </div>
+
+    <table id="myTable">
+
+    </table>
+</body>
+</html>

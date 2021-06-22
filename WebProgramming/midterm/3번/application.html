@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="application.js"></script>
+    <title>회원 가입 양식</title>
+</head>
+<body>
+    <h1>회원 가입 양식</h1>
+    아이디: <input type="text" id="aid"><br/>
+    이름: <input type="text" id="nname"><br/>
+    전화번호: <input type="text" id="phoneNumber"><br/>
+    성별:<input type="radio" name="gender" id="g"> 여자 <input type="radio" name="gender" id="b"> 남자<br/>
+
+    관심 있는 분야: <input type="checkbox" name="check"> 영화<input type="checkbox" name="check"> 음악
+    <input type="checkbox" name="check">게임 <input type="checkbox" name="check"> 코딩 <br/>
+    <button onclick="isRightForm()">제출</button>
+
+    <p id = "test">
+
+    </p>
+
+    <form id = "sub" action="./application.php" method="POST">
+        <input type="hidden" value="" id="data" name = "data">
+    </form>
+</body>
+</html>

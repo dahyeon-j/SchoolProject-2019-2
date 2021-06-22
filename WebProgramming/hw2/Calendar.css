@@ -1,0 +1,90 @@
+.inline {
+    display: inline;
+}
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.SubmitButton {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+}
+
+.SigninButton {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+}
+
+.modal01 {
+    padding: 2px;
+    float: right;
+    display: inline; 
+    position: absolute;
+    right: 120px;
+}
+
+.skyblue {
+    display: none;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: skyblue;
+}
+
+.addModal {
+    display: inline;
+    background-color: skyblue;
+    position: absolute;
+    left: 70px;
+
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: none;
+}
+
+.liModal {
+    display: inline;
+    background-color: skyblue;
+    position: absolute;
+    left: 300px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: none;
+}
+
+.displaynon {
+    display: none;
+}
+.table {
+    width: 100%;   
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+td {
+    width: 14%;
+}
+
+ul {
+    height: 100%;
+}
+

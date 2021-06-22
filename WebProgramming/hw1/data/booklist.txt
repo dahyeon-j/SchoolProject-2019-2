@@ -1,0 +1,2 @@
+Learning javascript|37000|30|javascript.jpg
+CSS|13000|40|CSS.jpg

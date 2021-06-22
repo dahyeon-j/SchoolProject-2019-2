@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        #dropx ,#box1, #box2 {
+            float: left;
+            width: 200px;
+            height: 100px;
+            
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        
+        function clickButton() {
+            
+            for (var i = 0; i < localStorage.length; i++) {
+                var img = document.createElement("img");
+                img.setAttribute("src","https://www.w3schools.com/html/img_logo.gif");
+                img.setAttribute("width","200");
+                console.log(localStorage.getItem(i));
+                var div_ = document.getElementById(localStorage.getItem(i));
+                div_.appendChild(img);  
+            }
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+
+        }
+        var count = 0; 
+        function drop(ev) {
+            
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem(count, ev.target.id);
+                count++;
+            }
+
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.w3schools.com/html/img_logo.gif" width="200" alt="" id="drag1" draggable="true" ondragstart="drag(event)"/>
+    <br/>
+    <button onclick="clickButton()">Read</button>
+    <br/>
+    
+    <div id="dropx">Drop X</div>
+    <div id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">Box 1</div>
+    <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">Box 2</div>
+</body>
+</html>

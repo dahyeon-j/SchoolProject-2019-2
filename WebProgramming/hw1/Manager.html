@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>관리자 : 상품정보저장하기</title>
+    <link rel="stylesheet" href="Manager.css">
+  </head>
+  <body>
+    <h1>상품 정보 저장하기</h1>
+    <form method="post" action="./upload.php" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <th>상품 이름</th>
+        <td><input type="text" size="30" name="name"/></td>
+      </tr>
+      <tr>
+        <th>가격</th>
+        <td><input type="text" size="10" name="price"/></td>
+      </tr>
+      <tr>
+        <th>수량</th>
+        <td><input type="text" size="5" name="quantity"/></td>
+      </tr>
+      <tr>
+        <th>미리보기 화일 </th>
+        <td><input type="file" name="imageFile" ></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><input type="submit" value="저장하기"/></td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>
